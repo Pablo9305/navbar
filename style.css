@@ -1,0 +1,57 @@
+*{
+padding: 0;
+margin: 0%;
+box-sizing: border-box;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    height: 100%;
+}
+
+.lista {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+   
+   
+}
+
+.hola{
+
+    list-style: none;
+    text-decoration: none;
+    color: darkred;
+    font-size: large;
+}
+.nav{
+    text-decoration: none;
+    list-style: none;
+
+
+}
+.itemlista{
+    color: blueviolet;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+}
+.hola:hover {
+  color: rebeccapurple;}
+
+.header{
+    height: 100px;
+    display: flex;
+    background-color: rgba(170, 129, 209, 0.979);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}  
