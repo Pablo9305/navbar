@@ -9,6 +9,8 @@ box-sizing: border-box;
 body{
    font-family: Cormorant Garamond;
    background: rgb(247, 245, 245);
+   text-decoration: none;
+    text-decoration-line: none;
    
 }
 
@@ -22,6 +24,16 @@ body{
     
 }
 
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
 .nav-menu {
     position: fixed;
     width: 100%;
@@ -31,15 +43,14 @@ body{
     background: #2e2947;
     transition: all .5;
     list-style: none;
-    text-decoration: none;
-    text-decoration-line: none;
+    
 
 }
 
 .nav-menu li {
     display: none;
-    line-height: 30px;
-    margin: 50px 0;
+    line-height: 40px;
+    margin: 20px 0;
     transition: all .5s;
 
 }
@@ -47,43 +58,31 @@ body{
 .nav-menu li a {
     color: #d9b988;
     text-transform: uppercase;
-}
-
-h3 { font-size: 40px;
-padding: 1.5rem;}
-
-.opcion {
-
     list-style: none;
     text-decoration: none;
     color: #d9b988;
     font-size: large;
 }
-nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-   
+
+h3 { font-size: 40px;
+padding: 1.5rem;}
 
 
-}
+    
+
 
 
 .btn-bar{
     color: #d9b988;
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 20px;
 
    
 
 }
 
 .nav-menu li a.active, .nav-menu li a:hover {
-    color: rebeccapurple ;
+    color: #d9b988 ;
     transition: 0.3s;
 }
 
@@ -91,11 +90,11 @@ nav {
     display: none;
 }
 
-#check:checked ~.nav-menu{
-    height: 100vh;
+#check:checked ~ .nav-menu{
+    height: 50vh;
 }
 
-#check:checked ~.nav-menu li {
+#check:checked ~ .nav-menu li {
     display: block;
 }
 
@@ -391,6 +390,7 @@ footer{
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     
 }
@@ -410,15 +410,20 @@ footer{
     max-height: 10rem;
 }
 
+.mapa {
+    max-width: 50%;
+}
+
 .mapita {
-    max-width: 25rem;
-    max-height: 25rem;
+    max-width: 20rem;
+    max-height: 20rem;
     border-radius: 5px;
     margin: 5px;
+    align-content: center;
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 481px){
     
 
     .hero{ display: flex;
@@ -447,21 +452,7 @@ footer{
     .vino {display: flex;
      }
 
-    .nav-menu {
-        position: relative;
-        height: 100px;
-        top: 0;
-        text-align: right;
-        margin-right: 40px;
-
-    }
-    .nav-menu li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-
-    }
-
+   
     
 
     .h3 {align-items: center;
@@ -489,39 +480,61 @@ footer{
        
     }
 
+    .mapa {
+        align-content: center;
+    }
+
     .mapita {
-        max-width: 15rem;
-        max-height: 15rem;
+        max-width: 12rem;
+        max-height: 12rem;
+        margin: 5px;
+        padding: 5px;
     }
 
     .infos {margin: none;}
 
     .infocontacto {
-        display: flex;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin: none;
         gap: none;
+        padding: 2px;
         
         
     }
 
-
-   
-  
-
- 
- 
+}
 
 
+@media (min-width: 769px) {
 
+    .btn-bar {
+        display: none;
+    }
 
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
 
-
-
-
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    
+    .nav-menu :hover {
+        color: rebeccapurple;
+    }
 }
     
 
